@@ -5,7 +5,7 @@ namespace UserManagementService.Models
     {
         public Guid Id { get; set; }
         public string Username { get; set; }
-        public string Password { get; set; }  // Note: In a real application, passwords should be hashed
-        public string Email { get; set; }
+        public string Password { get; set; }  // Plain text password (only for input)
+        public string PasswordHash { get; set; } // Hashed password
     }
 }
