@@ -12,8 +12,8 @@ using UserManagementService.Data;
 namespace UserManagementService.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20240719212709_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240719220039_AddNameFields")]
+    partial class AddNameFields
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,6 +30,14 @@ namespace UserManagementService.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Password")
                         .HasColumnType("text");
 
@@ -37,6 +45,7 @@ namespace UserManagementService.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Username")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");

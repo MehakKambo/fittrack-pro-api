@@ -39,6 +39,8 @@ namespace UserManagementService.Controllers
             {
                 Id = Guid.NewGuid(),
                 Username = user.Username,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.Password),
             };
 

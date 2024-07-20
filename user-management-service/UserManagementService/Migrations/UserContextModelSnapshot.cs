@@ -28,6 +28,14 @@ namespace UserManagementService.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Password")
                         .HasColumnType("text");
 
@@ -35,6 +43,7 @@ namespace UserManagementService.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Username")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
