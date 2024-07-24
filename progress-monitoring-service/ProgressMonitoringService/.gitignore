@@ -1,0 +1,60 @@
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore user-specific files and directories
+*.user
+*.rsuser
+*.suo
+*.swp
+*.tmp
+*.log
+.vscode/
+.idea/
+
+# Ignore .NET generated files
+*.vspscc
+*.vssscc
+.vscode/
+.vscode/*
+.vs/
+.vs/*
+.project/
+.project/*
+.DS_Store
+
+# Ignore build output files
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.apphost
+*.app/
+*.app/*
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+*.snupkg
+
+# Ignore package manager directories
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore database and backup files
+*.mdf
+*.ldf
+*.ndf
+*.sdf
+*.db
+*.sqlite
+*.bak
+
+# Ignore user secrets
+secrets.json
+
+# Ignore publish output
+publish/
+.publish/
